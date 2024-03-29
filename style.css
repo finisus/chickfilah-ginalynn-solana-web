@@ -104,12 +104,13 @@ main {
 }
 .contract-container span {
   font-size: 24px;
+  letter-spacing: 1px;
   font-weight: 900;
+  font-family: 'areYouSerious';
   text-align: center;
   word-break: break-all;
   padding-left: 12px;
   padding-right: 12px;
-  color: white;  
 }
 .contract-container button {
   width: 164px;
