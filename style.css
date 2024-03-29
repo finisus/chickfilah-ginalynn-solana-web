@@ -47,13 +47,12 @@ body {
   height: 100%;
   display: inline-block;
   text-align: center;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 0px;
 }
 
 .chicken-clockwise {
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: -8px;
+  margin-left: -8px;
   width: 64px;
   height: auto;
   -webkit-animation: rotating 2.69s linear infinite;
@@ -63,8 +62,8 @@ body {
   animation: rotating 2.69s linear infinite;
 }
 .chicken-anticlockwise {
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: -8px;
+  margin-left: -8px;
   width: 64px;
   height: auto;
   -webkit-animation: anti-rotating 2.69s linear infinite;
