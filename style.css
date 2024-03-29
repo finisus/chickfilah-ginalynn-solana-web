@@ -1,0 +1,39 @@
+/* Fonts */
+@font-face {
+  font-family: 'aztec';
+  src: url(./metadata/fonts/aztech-forest/AztechForest-9YJa0.otf);
+}
+@font-face {
+  font-family: 'paws';
+  src: url(./metadata/fonts/little-paws/LittlePaws-8MZqZ.ttf);
+}
+@font-face {
+  font-family: 'simplecat';
+  src: url(./metadata/fonts/simple-cat/Simplecat-d9xpV.otf);
+}
+
+/* Global Settings */
+
+:root {
+  --ChickRed: rgba(229, 22, 54, 1.0);
+}
+
+/* let page take full height of viewport excess */
+html { height: 100%; } body { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
+
+body {
+  background-color: var(--ChickRed);
+  color: white;
+}
+
+/* gif backdrop */
+#backdrop {
+  border: 2px solid black;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 320px;
+  height: 520px;
+}
