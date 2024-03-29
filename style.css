@@ -1,15 +1,7 @@
 /* Fonts */
 @font-face {
-  font-family: 'aztec';
-  src: url(./metadata/fonts/aztech-forest/AztechForest-9YJa0.otf);
-}
-@font-face {
-  font-family: 'paws';
-  src: url(./metadata/fonts/little-paws/LittlePaws-8MZqZ.ttf);
-}
-@font-face {
-  font-family: 'simplecat';
-  src: url(./metadata/fonts/simple-cat/Simplecat-d9xpV.otf);
+  font-family: 'chicken';
+  src: url(./metadata/fonts/chicken-hut-chick-fil-a/ChickenHut-ynKV.ttf);
 }
 
 /* Global Settings */
@@ -24,19 +16,172 @@ html { height: 100%; } body { position: absolute; top: 0; bottom: 0; right: 0; l
 body {
   background-color: var(--ChickRed);
   color: white;
+  font-family: 'chicken';
 }
 
-/* gif backdrop */
-#backdrop {
-  border: 2px solid black;
+/* main content */
+main {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 320px;
   height: 500px;
+  border: 2px solid white;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.socials button {
+  width: 110px;
+  height: auto;
+  font-family: 'chicken';
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.socials button:hover {
+  color: var(--ChickRed);
+}
+.socials button:active {
+  color: white;
+}
+
+.trade {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: -80px;
+}
+.trade button {
+  width: 120px;
+  height: auto;
+  font-family: 'chicken';
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.trade button:hover {
+  color: var(--ChickRed);
+}
+.trade button:active {
+  color: white;
+}
+
+.contract-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.contract-container span {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  word-break: break-all;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: white;  
+}
+.contract-container button {
+  width: 164px;
+  height: auto;
+  font-family: 'chicken';
+  font-size: 32px;
+  color: white;
+  background-color: var(--ChickRed);
+  border: 2px solid white;
+  padding: 8px;
+  cursor: pointer;
+}
+.contract-container button:hover {
+  color: var(--ChickRed);
+  background-color: white;
+  border: 2px solid var(--ChickRed);
+}
+.contract-container button:active {
+  color: white;
+  background-color: var(--ChickRed);
+  border: 2px solid white;
+}
+
+/* gif backdrop */
+#backdrop {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+}
+#gif-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+}
+#gif-2 {
+  position: absolute;
+  width: 80px;
+  right: 0;
+  margin-top: 190px;
+  z-index: 1;
+}
+#gif-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+}
+#gif-4 {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  margin-right: 72px;
+  margin-top: 200px;
+  z-index: 1;
+}
+#gif-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  z-index: 1;
+}
+#gif-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 80px;
+  width: 140px;
+  z-index: 3;
+}
+#gif-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  z-index: 2;
+}
+
 
 /* chickens */
 #chicken-container {
