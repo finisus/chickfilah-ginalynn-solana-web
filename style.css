@@ -34,10 +34,99 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  width: 340px;
-  height: 520px;
+  width: 320px;
+  height: 500px;
 }
-.chicken {
-  width: 48px;
+
+/* chickens */
+#chicken-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.chicken-clockwise {
+  margin-right: 2px;
+  margin-left: 2px;
+  width: 64px;
   height: auto;
+  -webkit-animation: rotating 2.69s linear infinite;
+  -moz-animation: rotating 2.69s linear infinite;
+  -ms-animation: rotating 2.69s linear infinite;
+  -o-animation: rotating 2.69s linear infinite;
+  animation: rotating 2.69s linear infinite;
+}
+.chicken-anticlockwise {
+  margin-right: 2px;
+  margin-left: 2px;
+  width: 64px;
+  height: auto;
+  -webkit-animation: anti-rotating 2.69s linear infinite;
+  -moz-animation: anti-rotating 2.69s linear infinite;
+  -ms-animation: anti-rotating 2.69s linear infinite;
+  -o-animation: anti-rotating 2.69s linear infinite;
+  animation: anti-rotating 2.69s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes anti-rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes anti-rotating {
+  from {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);  
+  }
+  to {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 }
