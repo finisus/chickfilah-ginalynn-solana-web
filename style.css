@@ -3,6 +3,10 @@
   font-family: 'chicken';
   src: url(./metadata/fonts/chicken-hut-chick-fil-a/ChickenHut-ynKV.ttf);
 }
+@font-face {
+  font-family: 'areYouSerious';
+  src: url(./metadata/fonts/are-you-serious/AreYouSerious-Regular.ttf);
+}
 
 /* Global Settings */
 
@@ -27,7 +31,8 @@ main {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 52px;
   align-items: center;
   width: 320px;
   height: 500px;
@@ -39,50 +44,55 @@ main {
 .socials {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 4px;
 }
 .socials button {
-  width: 110px;
+  width: auto;
   height: auto;
-  font-family: 'chicken';
-  letter-spacing: 2px;
-  font-size: 36px;
+  font-family: 'areYouSerious';
+  padding: 6px;
+  font-size: 24px;
   font-weight: 900;
-  color: white;
-  background: none;
-  border: none;
+  color: black;
+  background: white;
+  border: 2px solid var(--ChickRed);
   cursor: pointer;
 }
 .socials button:hover {
-  color: var(--ChickRed);
+  color: white;
+  background: var(--ChickRed);
+  border: 2px solid white;
 }
 .socials button:active {
-  color: white;
+  background: white;
+  border: 2px solid var(--ChickRed);
 }
 
 .trade {
   display: flex;
   flex-direction: row;
-  gap: 24px;
-  margin-top: -80px;
+  gap: 4px;
 }
 .trade button {
-  width: 120px;
+  width: auto;
   height: auto;
-  font-family: 'chicken';
-  letter-spacing: 2px;
-  font-size: 36px;
+  font-family: 'areYouSerious';
+  padding: 6px;
+  font-size: 24px;
   font-weight: 900;
-  color: white;
-  background: none;
-  border: none;
+  color: black;
+  background: white;
+  border: 2px solid var(--ChickRed);
   cursor: pointer;
 }
 .trade button:hover {
-  color: var(--ChickRed);
+  color: white;
+  background: var(--ChickRed);
+  border: 2px solid white;
 }
 .trade button:active {
-  color: white;
+  background: white;
+  border: 2px solid var(--ChickRed);
 }
 
 .contract-container {

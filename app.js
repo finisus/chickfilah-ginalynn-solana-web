@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // links
   const twitterBtn = document.getElementById('twitter-button');
   twitterBtn.addEventListener('click', function() {
-    window.open('https://x.com/', '_blank');
+    window.open('https://x.com/');
   });
 
   const telegramBtn = document.getElementById('telegram-button');
   telegramBtn.addEventListener('click', function() {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/');
   });
 
   const chartBtn = document.getElementById('chart-button');
   chartBtn.addEventListener('click', function() {
-    window.open('https://dexscreener.com/solana/', '_blank');
+    window.open('https://dexscreener.com/solana/');
   });
 
   const buyBtn = document.getElementById('buy-button');
   buyBtn.addEventListener('click', function() {
-    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=', '_blank');
+    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=');
   });
 
 });
